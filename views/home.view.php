@@ -1,8 +1,8 @@
 <?php
-loadPartials('head.php');
-loadPartials('navbar.php');
-loadPartials('search.php');
-loadPartials('top-banner.php');
+loadPartials('head');
+loadPartials('navbar');
+loadPartials('search');
+loadPartials('top-banner');
 ?>
     <!-- Nav -->
     
@@ -204,6 +204,6 @@ loadPartials('top-banner.php');
       </section>
 
 <?php
-loadPartials('bottom-banner.php');
-loadPartials('footer.php');
+loadPartials('bottom-banner');
+loadPartials('footer');
 ?>

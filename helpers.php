@@ -20,7 +20,7 @@
   */
 
   function loadViews($name){
-   return basePath("views/{$name}.view.php");
+   require basePath("views/{$name}.view.php");
   }
 
   /**
@@ -31,5 +31,5 @@
    */
 
    function loadPartials($name){
-      return basePath("views/partials/{$name}");
+      require basePath("views/partials/{$name}.php");
    }
