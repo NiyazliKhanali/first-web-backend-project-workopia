@@ -11,9 +11,15 @@
 </head>
 <body class="bg-gray-100">
     <x-header />
+    @if(request()->is('/'))
+    <x-hero />
+    <x-top-banner />
+    @endif
     <h1>Welcome To Workopia</h1>
     <main class="container mx-auto p-4 mt-4">
         {{$slot}}
     </main>
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <script src="{{asset('js/script.js')}}"></script>
 </body>
 </html>
